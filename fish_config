@@ -2,12 +2,17 @@ set fish_greeting
 
 set -x LS_COLORS "ow=34;01"
 
-#ls aliases
+# ls aliases
 alias ls="lsd"
 alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
+
+# disk aliases
+alias zbar='cd /mnt/z/home'
+alias pobruno='cd /mnt/h/Repository/GitHub/pobruno'
+alias mongagit='cd /mnt/h/Repository/GitHub/mongagit'
 
 # custom aliases
 alias cleanup="sudo apt autoremove"

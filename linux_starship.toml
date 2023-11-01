@@ -19,8 +19,8 @@ format = """$env_var $all"""
 # Change the default prompt characters
 [character]
 # old config
-success_symbol = "[](238)"
-error_symbol = "[](238)"
+success_symbol = "[->](238)"
+error_symbol = "[❌](238)"
 #success_symbol = ""
 #error_symbol = ""
 
@@ -46,9 +46,9 @@ disabled = false
 [directory]
 truncation_length = 1
 truncation_symbol = "…/"
-home_symbol = " ~"
+home_symbol = "🏠 ~"
 read_only_style = "197"
-read_only = "  "
+read_only = " 🔒 "
 format = "at [$path]($style)[$read_only]($read_only_style) "
 
 [git_branch]

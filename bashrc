@@ -94,6 +94,10 @@ alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
 
+alias zbar='cd /mnt/z/home'
+alias pobruno='cd /mnt/h/Repository/GitHub/pobruno'
+alias mongagit='cd /mnt/h/Repository/GitHub/mongagit'
+
 # custom aliases
 alias cleanup="sudo apt autoremove"
 alias update="sudo apt update && sudo apt upgrade -y"

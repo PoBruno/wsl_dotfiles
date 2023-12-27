@@ -31,6 +31,7 @@ sudo chown -R <username> .
 
 ```bash
 cd /mnt/c/Users/<username>/Downloads/dotfiles/
+cd /mnt/c/Users/bruno/Downloads/dotfiles/
 chmod +x auto_config.sh
 ./auto_config.sh
 ```

@@ -187,3 +187,50 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 nitch
+
+
+# Alias para navegação entre diretórios
+alias bruno='cd "/mnt/C/Users/bruno"'
+alias domo='cd "/mnt/H/This PC/Cloud/OneDrive - DOMO SOLUCOES EM T.I/tec-activities-domo"'
+alias domocli='cd "/mnt/H/This PC/Cloud/OneDrive - DOMO SOLUCOES EM T.I/tec-activities-domo/projetos"'
+alias diskc='cd /mnt/c'
+alias diskd='cd /mnt/d'
+alias diskh='cd /mnt/h'
+alias pobruno "cd /mnt/H/Repository/GitHub/pobruno"
+alias localrepo "cd /mnt/H/Repository"
+
+# Alias para listagem de diretórios usando lsd
+alias ls='lsd'
+alias lsa='lsd -a'
+alias lsl='lsd -l'
+
+# Alias para executar o cliente SSH do Windows
+alias ssh="/mnt/c/Windows/System32/OpenSSH/ssh.exe"
+alias ssh-add="/mnt/c/Windows/System32/OpenSSH/ssh-add.exe"
+
+# Funções GitHub
+gitbranch() {
+    git checkout -b $1
+    git push --set-upstream origin $1
+}
+
+gitcommit() {
+    git add .
+    git commit -m "$*"
+}
+
+gitpush() {
+    git add .
+    git commit -m "$*"
+    git push
+}
+
+gitmerge() {
+    git checkout master
+    git merge "$*"
+}
+
+# Função para recarregar o perfil
+reload-profile() {
+    source ~/.oh-my-zsh/oh-my-zsh.sh
+}
